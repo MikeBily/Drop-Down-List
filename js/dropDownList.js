@@ -217,7 +217,9 @@
                     }else{
                         html.push('><span class="dropDownList_checkbox"></span>');
                     }
-                }
+                }else{
+					html.push('>');
+				}
                 html.push('<span>' + this.innerHTML + '</span></li>');
             });
             ul.html(html.join(''));
